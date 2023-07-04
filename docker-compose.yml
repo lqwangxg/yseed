@@ -1,0 +1,5 @@
+
+services:
+  webapp:
+    build: https://github.com/lqwangxg/yseed.git
+    

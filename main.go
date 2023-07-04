@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"hello/common"
+	"github.com/lqwangxg/yseed/common"
 	"net/http"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
