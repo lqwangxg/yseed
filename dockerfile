@@ -1,7 +1,6 @@
 # syntax=docker/dockerfile:1
 
-#FROM golang:1.19
-FROM bash
+FROM golang:1.19
 
 # Set destination for COPY
 WORKDIR /go/bin
