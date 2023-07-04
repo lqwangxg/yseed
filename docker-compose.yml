@@ -2,8 +2,10 @@ version: "3.9"
 
 services:
   yseed:
-    build: https://github.com/lqwangxg/yseed.git
+    container_name: yseed
+    #build: https://github.com/lqwangxg/yseed.git
+    build: .
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - .:/go/src

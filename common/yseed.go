@@ -37,7 +37,7 @@ func Seed(x string, y string, z string) string {
 	if  (err!=nil) {
 		return fmt.Sprintf("z:%v",err)
 	}
-	return fmt.Sprintf("(%d,%d,%d):第%d卦 <a href=''>%s卦</> %s 第%d爻.", top, bom, yao, g.Id, g.Name, g.Alias, yao)
+	return fmt.Sprintf("(%d,%d,%d):第%d卦 %s卦 %s 第%d爻.", top, bom, yao, g.Id, g.Name, g.Alias, yao)
 }
 
 func mod(p string, m int) (int, error) {
@@ -70,7 +70,7 @@ func GetGuaById(mx int) (Gua, error) {
 }
 
 func readYml() []Gua {
-	s, err := ioutil.ReadFile("./config.yml")
+	s, err := ioutil.ReadFile("config.yml")
 	if err != nil {                                    
         fmt.Println(err)                               
         return make([]Gua,0)
